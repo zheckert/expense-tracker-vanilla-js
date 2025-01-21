@@ -11,19 +11,21 @@
     <h1>Expense Tracker</h1>
     <div>
       <div>Add an expense</div>
-      <form>
-        <label>Amount</label>
-        <input type="text" name="amount" id="amount" required />
-        <label>Location of purchase</label>
-        <input type="text" name="location" id="location" />
-        <button>Submit</button>
+      <form id="expensesForm">
+        <label for="amountInput">Amount</label>
+        <input type="text" name="amountInput" id="amountInput" required />
+
+        <label for="locationInput">Location of purchase</label>
+        <input type="text" name="locationInput" id="locationInput" />
+
+        <button type="submit">Submit</button>
       </form>
     </div>
     <div>
-      <div>
+      <div id="list">
         <h1>List</h1>
       </div>
-      <div>
+      <div id="chart">
         <h1>Chart</h1>
       </div>
     </div>
